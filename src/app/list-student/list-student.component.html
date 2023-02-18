@@ -1,0 +1,26 @@
+<div class="card my-75">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Student Id</th>
+            <th scope="col">Student Name</th>
+            <th scope="col">Student DateOfBirth</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Email Id</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students | async">
+            <td>{{ student.studentId}}</td>
+            <td>{{ student.studentName }}</td>
+            <td>{{ student.studentDOB }}</td>
+            <td>{{ student.phoneNumber}}</td>
+            <td>{{ student.email}}</td>
+            <td>{{ student.adrress}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
